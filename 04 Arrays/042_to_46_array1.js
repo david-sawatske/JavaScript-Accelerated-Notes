@@ -23,6 +23,7 @@ console.log(array.indexOf(4)); // => 3
 array[array.indexOf(4)] = 'not 4';
 console.log(array);  // => [ 1, 2, 3, 'not 4', 5, 6 ]
 
+// Splice //
 array = [1,2,3,4,5,6];
 var newArr = array.splice(3);
 console.log(newArr);  // => [ 4, 5, 6 ] the els at index 3 to the end
@@ -32,7 +33,7 @@ array = [1,2,3,4,5,6];
 newArr = array.splice(3, 2); // arg 1 = where to start, arg 2 = num to splice
 console.log(newArr)  // => [ 4, 5 ] takes two els starting at index 3
 
-
+// Slice //
 array = [1,2,3,4,5,6];
 newArr = array.slice(1, 3) // starting index, ending index (not included)
 console.log(newArr); // => [ 2, 3 ]
