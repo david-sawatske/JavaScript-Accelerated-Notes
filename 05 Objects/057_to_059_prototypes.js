@@ -5,7 +5,7 @@ var p1 = {
 
 // finding objects prototype (don't use in production)
 //  => part of browsers, not JS
-console.log(p1.__proto__); // => {} just an object
+console.log(p1.__proto__); // => {}   ie Object.prototype
 
 // prototypes have methods that are built into all objects
 //  => JS's version of inheritence
@@ -28,7 +28,7 @@ p2.greet(); // => "My name is Anna"     the 'this' keyword refers to the object
 
 // Showing protype chain
 console.log(p2.__proto__ == p1); // => true      as we defined when creating p2
-console.log(p2.__proto__.__proto__ == Object.prototype); // => true   == p1.__proto__
+console.log(p2.__proto__.__proto__ == Object.prototype); // => true == p1.__proto__
 
 // Finding prototype in production? 'safer' way to compare
 console.log(Object.getPrototypeOf(p2) == p1);  // => true
